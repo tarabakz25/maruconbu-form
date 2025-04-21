@@ -12,7 +12,7 @@ export default function Home() {
     setStatus('submitting')
 
     const { error } = await supabase
-      .from('forms')
+      .from('forms2')
       .insert({
         name,
         participation
