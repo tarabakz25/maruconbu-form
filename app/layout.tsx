@@ -14,8 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Procon2025参加フォーム",
-  description: "Procon2025参加フォーム",
+  title: "まるごとコンテスト部参加フォーム",
 }
 
 export default function RootLayout({

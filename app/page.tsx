@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <main className="p-6 h-screen w-screen mx-auto text-center flex flex-col justify-center items-center bg-white text-black font-['ab-don']">
-      <h1 className="text-2xl mb-4">高専プロコン参加フォーム</h1>
+      <h1 className="text-2xl mb-4">まるごとコンテスト部参加フォーム</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
           type="text"
