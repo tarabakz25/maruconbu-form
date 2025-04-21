@@ -4,7 +4,7 @@ import { supabase } from '@/utils/supabase/client'
 
 export default function Home() {
   const [name, setName] = useState('')
-  const [participation, setParticipation] = useState(false)
+  const [jointheclub, setJointheclub] = useState(false)
   const [status, setStatus] = useState('idle')
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -15,7 +15,7 @@ export default function Home() {
       .from('forms2')
       .insert({
         name,
-        participation
+        jointheclub
       })
 
     if(error) {
@@ -42,8 +42,8 @@ export default function Home() {
         <label className="flex items-center space-x-2">
           <input
             type="checkbox"
-            checked={participation}
-            onChange={(e) => setParticipation(e.target.checked)}
+            checked={jointheclub}
+            onChange={(e) => setJointheclub(e.target.checked)}
             className="form-checkbox"
           />
           <span>参加する</span>

@@ -1,14 +1,14 @@
 import { NextRequest, NextResponse } from "next/server"
-import { createClient } from "@/utils/supabase/server"; 
+import { createClient } from "@/utils/supabase/server"
 
 export async function POST(request: NextRequest) {
-    const { name, participation } = await request.json()
+    const { name, jointheclub } = await request.json()
 
     const supabase = await createClient()
 
     const { data, error } = await supabase.from('forms2').insert({
         name,
-        participation
+        jointheclub
     })
 
     if (error) {
